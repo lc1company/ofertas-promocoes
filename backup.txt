@@ -61,7 +61,7 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
             margin-bottom: 20px;
-            margin-top: 35%;
+            margin-top: 5%;
             min-height: 50px;
             overflow-x: auto;
         }
@@ -74,6 +74,7 @@
             position: relative;
             border: 1px solid #ddd;
             margin-top: 20px;
+            min-width: 125px;
         }
 
         .produto img {
@@ -152,6 +153,7 @@
             left: 25%;
             top: 4%;
             position: absolute;
+            margin-top: 5%;
         }
 
         .mostrarInfoProduto {
@@ -168,19 +170,110 @@
             text-align: center;
             justify-content: center;
         }
+
+        .produtos-horizontal {
+            display: flex;
+            margin-top: 35%;
+            gap: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            width: auto;
+            margin-right: 10px;
+            min-width: 250px;
+        }
+
+        .produtos-horizontal img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="logo-banner">
-            <img src="banner.png" alt="banner">
+            <img src="https://i.ibb.co/F52RZtq/banner.png" alt="banner" loading="lazy">
         </div>
+
+        <!--COMECO DA ORGANIZACAO HORIZONTAL-->
+        
+        <div class="produtos-horizontal">
+            <div class="produto">
+                <a class="mostrarInfoProduto" href="javascript:void(0)">
+                    <img src="https://i.ibb.co/CJj4Wvf/leite.png" alt="recomendado 1" loading="lazy">
+                </a>
+                <div class="sobreposicaoInfoProduto escondido">
+                    <div class="info-produto">
+                        <button class="fecharInfoProduto">X</button>
+                        <p class="texto-designer">Ipsom</p>
+                        <p class="texto-designer">lorem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <a class="mostrarInfoProduto" href="javascript:void(0)">
+                    <img src="https://i.ibb.co/ZTR33Df/heineken-lata.png" alt="recomendado 2" loading="lazy">
+                </a>
+                <div class="sobreposicaoInfoProduto escondido">
+                    <div class="info-produto">
+                        <button class="fecharInfoProduto">X</button>
+                        <p class="texto-designer">Ipsom</p>
+                        <p class="texto-designer">Lorem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <a class="mostrarInfoProduto" href="javascript:void(0)">
+                    <img src="https://i.ibb.co/jL1224t/fanta-lata.png" alt="recomendado 3" loading="lazy">
+                </a>
+                <div class="sobreposicaoInfoProduto escondido">
+                    <div class="info-produto">
+                        <button class="fecharInfoProduto">X</button>
+                        <p class="texto-designer">Ipsom</p>
+                        <p class="texto-designer">Lorem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <a class="mostrarInfoProduto" href="javascript:void(0)">
+                    <img src="https://i.ibb.co/L1NNq1s/skol.png" alt="recomendado 4" loading="lazy">
+                </a>
+                <div class="sobreposicaoInfoProduto escondido">
+                    <div class="info-produto">
+                        <button class="fecharInfoProduto">X</button>
+                        <p class="texto-designer">Ipsom</p>
+                        <p class="texto-designer">Lorem</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <a class="mostrarInfoProduto" href="javascript:void(0)">
+                    <img src="https://i.ibb.co/M6GZy4Z/ovos.png" alt="recomendado 5" loading="lazy">
+                </a>
+                <div class="sobreposicaoInfoProduto escondido">
+                    <div class="info-produto">
+                        <button class="fecharInfoProduto">X</button>
+                        <p class="texto-designer">Ipsom</p>
+                        <p class="texto-designer">Lorem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--FIM DA ORGANIZACAO HORIZONTAL-->
 
         <div class="produtos-container">
             <div class="produto">
                <a class="mostrarInfoProduto" href="javascript:void(0);">
-                <img src="ovos.png" alt="produto 1">
+                <img src="https://i.ibb.co/M6GZy4Z/ovos.png" alt="produto 1" loading="lazy">
                </a>
                 <div class="sobreposicaoInfoProduto escondido">
                     <div class="info-produto">
@@ -190,14 +283,14 @@
                         <a href="https://www.google.com/maps/place/Laranjeiras+Supermercado/@-22.5498658,-47.3912574,17z/data=!3m1!4b1!4m6!3m5!1s0x94c88097ea24fb03:0x573f53a7d78a0fc!8m2!3d-22.5498658!4d-47.3912574!16s%2Fg%2F11c609r2v1?entry=ttu">
                             <img src="mapaMercadoLaranjeiras.PNG" alt="foto mapa">Abrir no Mapa
                         </a>
-                        <img src="ovos.png" alt="ovos">
+                        <img src="https://i.ibb.co/M6GZy4Z/ovos.png" alt="produto 1" loading="lazy">
                     </div>
                 </div>
             </div>
 
             <div class="produto">
                 <a class="mostrarInfoProduto" href="javascript:void(0);">
-                    <img src="skol.png" alt="produto 2" >
+                    <img src="https://i.ibb.co/L1NNq1s/skol.png" alt="produto 2" loading="lazy">
                 </a>
                 <div class="sobreposicaoInfoProduto escondido">
                     <div class="info-produto">
@@ -207,14 +300,14 @@
                         <a href="https://www.google.com/maps/place/Laranjeiras+Supermercado/@-22.5498658,-47.3912574,17z/data=!3m1!4b1!4m6!3m5!1s0x94c88097ea24fb03:0x573f53a7d78a0fc!8m2!3d-22.5498658!4d-47.3912574!16s/g/11c609r2v1?entry=ttu">
                             <img src="mapaMercadoLaranjeiras.PNG" alt="foto mapa">Abrir no Mapa
                         </a>
-                        <img src="skol.png" alt="Skol">
+                        <img src="https://i.ibb.co/L1NNq1s/skol.png" alt="produto 2" loading="lazy">
                     </div>
                 </div>
             </div>
 
             <div class="produto">
                 <a class="mostrarInfoProduto" href="javascript:void(0);">
-                    <img src="heineken lata.png" alt="produto 3">
+                    <img src="https://i.ibb.co/ZTR33Df/heineken-lata.png" alt="produto 3" loading="lazy">
                 </a>
                 <div class="sobreposicaoInfoProduto escondido">
                     <div class="info-produto">
@@ -224,14 +317,14 @@
                         <a href="https://www.google.com/maps/place/Laranjeiras+Supermercado/@-22.5498658,-47.3912574,17z/data=!3m1!4b1!4m6!3m5!1s0x94c88097ea24fb03:0x573f53a7d78a0fc!8m2!3d-22.5498658!4d-47.3912574!16s/g/11c609r2v1?entry=ttu">
                             <img src="mapaMercadoLaranjeiras.PNG" alt="foto mapa">Abrir no Mapa
                         </a>
-                        <img src="heineken lata.png" alt="heineken lata">
+                        <img src="https://i.ibb.co/ZTR33Df/heineken-lata.png" alt="produto 3" loading="lazy">
                     </div>
                 </div>
             </div>
 
             <div class="produto">
                 <a class="mostrarInfoProduto" href="javascript:void(0);">
-                    <img src="fanta lata.png"produto 4">
+                    <img src="https://i.ibb.co/jL1224t/fanta-lata.png" alt="produto 4" loading="lazy">
                 </a>
                 <div class="sobreposicaoInfoProduto escondido">
                     <div class="info-produto">
@@ -241,14 +334,14 @@
                         <a href="https://www.google.com/maps/place/Laranjeiras+Supermercado/@-22.5498658,-47.3912574,17z/data=!3m1!4b1!4m6!3m5!1s0x94c88097ea24fb03:0x573f53a7d78a0fc!8m2!3d-22.5498658!4d-47.3912574!16s/g/11c609r2v1?entry=ttu">
                             <img src="mapaMercadoLaranjeiras.PNG" alt="foto mapa">Abrir no Mapa
                         </a>
-                        <img src="fanta lata.png" alt="fanta">
+                        <img src="https://i.ibb.co/jL1224t/fanta-lata.png" alt="produto 4" loading="lazy">
                     </div>
                 </div>
             </div>
 
             <div class="produto">
                 <a class="mostrarInfoProduto" href="javascript:void(0);">
-                    <img src="leite.png" alt="produto 5">
+                    <img src="https://i.ibb.co/CJj4Wvf/leite.png" alt="produto 5" loading="lazy">
                 </a>
                 <div class="sobreposicaoInfoProduto escondido">
                     <div class="info-produto">
@@ -258,7 +351,7 @@
                         <a href="https://www.google.com/maps/place/Laranjeiras+Supermercado/@-22.5498658,-47.3912574,17z/data=!3m1!4b1!4m6!3m5!1s0x94c88097ea24fb03:0x573f53a7d78a0fc!8m2!3d-22.5498658!4d-47.3912574!16s/g/11c609r2v1?entry=ttu">
                             <img src="mapaMercadoLaranjeiras.PNG" alt="foto mapa">Abrir no Mapa
                         </a>
-                        <img src="leite.png" alt="leite">
+                        <img src="https://i.ibb.co/CJj4Wvf/leite.png" alt="produto 5" loading="lazy">
                     </div>
                 </div>
             </div>
