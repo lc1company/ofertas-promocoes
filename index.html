@@ -9,8 +9,8 @@
         /* Estilo CSS personalizado */
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #000000;
-            color: #000;
+            background-color: #7c7676;
+            color: rgb(255, 255, 255);
             padding: 10px;
         }
 
@@ -106,18 +106,18 @@
         }
 
         .info-produto {
-            background: white;
+            background: #ffffff;
             border-radius: 5px;
             padding: 20px;
             text-align: center;
-            width: 50%;
-            height: 100%;
-            margin-left: 20%;
-            margin-right: 15%;
+            width: 60%;
+            height: auto;
             align-items: center;
             justify-content: center;
             overflow-y: auto;
-            max-height: 80%;            
+            max-height: 90%;
+            margin-left: auto;
+            margin-right: auto;  
         }
 
         .fecharInfoProduto {
@@ -125,11 +125,11 @@
             color: rgb(255, 255, 255);
             border: none;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
             font-size: 15px;
-            left: 25%;
-            top: 4%;
+            left: 20%;
+            top: 1%;
             position: absolute;
             margin-top: 5%;
         }
@@ -158,7 +158,6 @@
             height: 100%;
             overflow-x: auto;
             white-space: nowrap;
-            width: auto;
             margin-right: 10px;
             min-width: 250px;
         }
@@ -199,6 +198,44 @@
             height: auto;
             display: block;
         }
+
+        .produtos-relacionados-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-bottom: 7%;
+            width: 100%;
+            height: auto;
+            overflow-x: auto;
+            white-space: nowrap;
+            min-width: 100px;
+            overflow: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .produtos-relacionados-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 50px;
+            min-width: 200px;
+        }
+
+        .produtos-relacionados-produto {
+            background-color: transparent;
+            min-width: 100px;
+        }
+
+        .popup-info-produto {
+            width: 100%;
+            height: auto;
+        }
+
+        .popup-info-produto img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -211,20 +248,52 @@
         <div class="produtos-horizontal">
             <div class="produto">
                 <a class="mostrarInfoProduto" href="javascript:void(0)">
-                    <img src="https://i.ibb.co/CJj4Wvf/leite.png" alt="recomendado 1" loading="lazy">
+                    <img src="https://i.ibb.co/CJj4Wvf/leite.png" alt="produto horizontal 1" loading="lazy">
                 </a>
                 <div class="sobreposicaoInfoProduto escondido">
                     <div class="info-produto">
                         <button class="fecharInfoProduto">X</button>
-                        <p class="texto-designer">Ipsom</p>
-                        <p class="texto-designer">lorem</p>
+                        <p class="texto-designer">Produtos</p>
+                        <p class="texto-designer">Recomendados</p>
+                        <div class="produtos-relacionados-container">
+                            <div class="produtos-relacionados-produto">
+                                <img src="https://i.ibb.co/ZTR33Df/heineken-lata.png" alt="produto relacionado 1" loading="lazy">
+                                <img src="https://i.ibb.co/jL1224t/fanta-lata.png" alt="produto relacionado 2" loading="lazy">
+                                <img src="https://i.ibb.co/L1NNq1s/skol.png" alt="produto relacionado 3" loading="lazy">
+                                <img src="https://i.ibb.co/M6GZy4Z/ovos.png" alt="produto relacionado 4" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="popup-info-produto">
+                            <img src="imagem sub topo fixa.png" alt="imagem popup 1" loading="lazy">
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="produto">
                 <a class="mostrarInfoProduto" href="javascript:void(0)">
-                    <img src="https://i.ibb.co/ZTR33Df/heineken-lata.png" alt="recomendado 2" loading="lazy">
+                    <img src="https://i.ibb.co/ZTR33Df/heineken-lata.png" alt="produto horizontal 2" loading="lazy">
+                </a>
+                <div class="sobreposicaoInfoProduto escondido">
+                    <div class="info-produto">
+                        <button class="fecharInfoProduto">X</button>
+                        <p class="texto-designer">Produtos</p>
+                        <p class="texto-designer">Relacionados</p>
+                        <div class="produtos-relacionados-container">
+                            <div class="produtos-relacionados-produto">
+                                <img src="https://i.ibb.co/CJj4Wvf/leite.png" alt="produto relacionado 5" loading="lazy">
+                                <img src="https://i.ibb.co/jL1224t/fanta-lata.png" alt="produto relacionado 6" loading="lazy">
+                                <img src="https://i.ibb.co/L1NNq1s/skol.png" alt="produto relacionado 7" loading="lazy">
+                                <img src="https://i.ibb.co/M6GZy4Z/ovos.png" alt="produto relacionado 8" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <a class="mostrarInfoProduto" href="javascript:void(0)">
+                    <img src="https://i.ibb.co/jL1224t/fanta-lata.png" alt="produto horizontal 3" loading="lazy">
                 </a>
                 <div class="sobreposicaoInfoProduto escondido">
                     <div class="info-produto">
@@ -237,7 +306,7 @@
 
             <div class="produto">
                 <a class="mostrarInfoProduto" href="javascript:void(0)">
-                    <img src="https://i.ibb.co/jL1224t/fanta-lata.png" alt="recomendado 3" loading="lazy">
+                    <img src="https://i.ibb.co/L1NNq1s/skol.png" alt="produto horizontal 4" loading="lazy">
                 </a>
                 <div class="sobreposicaoInfoProduto escondido">
                     <div class="info-produto">
@@ -250,20 +319,7 @@
 
             <div class="produto">
                 <a class="mostrarInfoProduto" href="javascript:void(0)">
-                    <img src="https://i.ibb.co/L1NNq1s/skol.png" alt="recomendado 4" loading="lazy">
-                </a>
-                <div class="sobreposicaoInfoProduto escondido">
-                    <div class="info-produto">
-                        <button class="fecharInfoProduto">X</button>
-                        <p class="texto-designer">Ipsom</p>
-                        <p class="texto-designer">Lorem</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="produto">
-                <a class="mostrarInfoProduto" href="javascript:void(0)">
-                    <img src="https://i.ibb.co/M6GZy4Z/ovos.png" alt="recomendado 5" loading="lazy">
+                    <img src="https://i.ibb.co/M6GZy4Z/ovos.png" alt="produto horizontal 5" loading="lazy">
                 </a>
                 <div class="sobreposicaoInfoProduto escondido">
                     <div class="info-produto">
@@ -276,7 +332,7 @@
         </div>
 
         <div class="top-image">
-            <img src="imagem topo.png" alt="imagem promo topo" loading="lazy">
+            <img src="imagem topo.png" alt="imagem promocao topo" loading="lazy">
             <img src="imagem sub topo fixa.png" alt="imagem fixa topo" loading="lazy">
         </div>
 
